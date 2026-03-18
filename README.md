@@ -73,8 +73,16 @@ The LSTM model was evaluated using multiple regression performance metrics to en
 ### 🔹 Visual Validation
 
 * Learning curves indicate proper convergence during training.
+
+<img src="readme_images/learning_curve.png" width="700">
+
 * Predicted values closely follow the actual test data trend.
+
+<img src="readme_images/predicted_value.png" width="700">
+  
 * Future predictions show a consistent trend based on learned temporal patterns.
+
+<img src="readme_images/stockPrice.png" width="700">
 
 ---
 
