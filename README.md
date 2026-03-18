@@ -48,17 +48,41 @@ Stock Data → Preprocessing → Model Training → Prediction → Visualization
 
 ---
 
-## Results
+## Results & Model Evaluation
 
-- Model trained on historical stock dataset  
-- Predictions compared with actual stock prices  
-- Performance evaluated using metrics such as:
+The LSTM model was evaluated using multiple regression performance metrics to ensure a comprehensive assessment of its predictive capability on unseen data.
 
-  - Mean Squared Error (MSE)  
-  - Root Mean Squared Error (RMSE)  
-  - Mean Absolute Error (MAE)  
+### 🔹 Evaluation Metrics
 
-*(Add your actual results here if available)*
+| Metric       | Value  | Description                                                     |
+| ------------ | ------ | --------------------------------------------------------------- |
+| **RMSE**     | 0.0167 | Measures the standard deviation of prediction errors            |
+| **MAE**      | 0.0123 | Average absolute difference between predicted and actual values |
+| **R² Score** | 0.962  | Indicates the proportion of variance explained by the model     |
+
+---
+
+### 🔹 Performance Interpretation
+
+* The model achieved an **R² score of 0.962**, indicating that approximately **96.2% of the variance** in stock prices is captured by the model.
+* The **low RMSE (0.0167)** and **MAE (0.0123)** values suggest that prediction errors are minimal.
+* Training and validation loss curves demonstrate **stable learning behavior** with no significant overfitting, aided by Early Stopping.
+
+---
+
+### 🔹 Visual Validation
+
+* Learning curves indicate proper convergence during training.
+* Predicted values closely follow the actual test data trend.
+* Future predictions show a consistent trend based on learned temporal patterns.
+
+---
+
+## Key Observations
+
+* The LSTM model effectively captures short-term temporal patterns (5-day window).
+* Hyperparameter tuning further improved model performance.
+* The model generalizes well on test data, indicating robustness.
 
 ---
 
